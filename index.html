@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8"/>
+        <title>Автоматизована система літакобудівельного підприємства</title>
+        <script src="script.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body onload="greeting()">
+        <h1>Вітаємо на сайті автоматизованої системи літакобудівельного підприємства</h1>
+        <hr/><h2>Форма введення даних про виріб:</h2>
+        <form method="get" action="index.html">
+       
+            <br/>
+            Вид виробу: 
+            <select name="vyd_tovary">
+                <option value="Monitor" selected="selected">Цивільні</option>
+                <option value="Printer">Транспортні</option>
+				<option value="Printer">Військові</option>
+            </select>
+			<br/>
+			Цех №:    
+            <select name="vyd_tovary">
+                <option value="Monitor" selected="selected">1</option>
+                <option value="Printer">2</option>
+				<option value="Printer">3</option>
+            </select>
+            <br/>
+			Бригада №:    
+            <select name="vyd_tovary">
+                <option value="Monitor" selected="selected">1</option>
+                <option value="Printer">2</option>
+				<option value="Printer">3</option>
+            </select>
+			<br/>
+           
+            Опис виробу: 
+            <textarea cols="25" rows="5" name="description">Приклад</textarea>
+            <br/>
+            Кількість виробів: <input type="text" name="quantity" />
+            <br/>
+			Валюта: <input type="radio" name="vyd_valuty" value="UAH" checked=="checked">UAH <input type="radio" name="vyd_valuty" value="USD">USD <input type="radio" name="vyd_valuty" value="EUR">EUR
+            <br/>
+            Ціна: <input type="text" name="price" />
+            <br/>
+            Спосіб розрахунку за виріб: <input type="checkbox" name="vyd_rozrahunku" value="gotivkovy"/>готівковий <input type="checkbox" name="vyd_rozrahunku" value="bezgotivkovy"/>безготівковий
+            <br/>
+		Дата надходження виробу: 
+            <input type="text" name="receiving_date" />
+		<br/>
+            <input type="submit" value="Зберегти"/>
+        </form>
+    </body>
+</html>
